@@ -1,0 +1,369 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2d1b4a;
+    color: white;
+    position:relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+header {
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3e2769;
+}
+#searchbar {
+   height:40px;
+    width:500px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    position:absolute;
+    left:210px;
+    top:20px;
+}
+#nav{
+    position:relative;
+    left:190px;
+    font-size: larger;
+}
+#nav>a{
+    margin-left:70px;
+    text-decoration: none;
+    color:white;
+    margin-right:20px;
+}
+.auth-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-buttons .signup {
+    background-color: #5b3ea3;
+    height:40px;
+    width:100px;
+    position:relative;
+    right:120px;
+    border-radius: 32px;
+}
+
+.auth-buttons .login {
+    background-color: #c93c83;
+    height:40px;
+    width:100px;
+    position:relative;
+    right:80px;
+    border-radius: 32px;
+    /* margin-left:50px; */
+}
+#thumbnail{
+    height:600px;
+    width:500px;
+    border-radius: 20px;
+    position:absolute;
+    left:53px;
+    top:120px;
+}
+
+.cont{
+    height:107px;
+    width:151px;
+    border:1px solid #B78FBB;
+    border-radius:20px;
+    position:relative;
+    top:40px;
+    margin-left:25px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.first,.second{
+    display: inline-block;
+}
+main.div{
+    position:relative;
+    left:20px;
+}
+h3{
+    position:relative;
+    left:30px;
+    top:20px;
+}
+.trending-songs {
+    height:50px;
+    width:300px;
+    position:absolute;
+    left:1100px;
+    top:80px;
+}
+
+.trending-songs h3 {
+    text-align: center;
+}
+
+.trending-songs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending-songs li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    height:40px;
+}
+
+.trending-songs li:hover {
+    background-color: #3e2769;
+}
+.trending-songs h3{
+    position:relative;
+    right:20px;
+}
+#release{
+    height:200px;
+    width:335px;
+    border:1px solid black;
+    background-color: #B78FBB;
+    position: relative;
+    left:14px;
+    border-radius: 10px;
+    top:30px;
+}
+.music-player {
+    background-image: url('https://i.ytimg.com/vi/QAm3EqfsUSI/maxresdefault.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/mnt/data/music player.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 25px;
+    padding: 20px;
+    width: 295px;
+    height: 100px;
+    color: #ffffff;
+    position:relative;
+    left:14px;
+    top:40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.current-time, .total-time {
+    font-size: 14px;
+}
+
+.song-info {
+    text-align: center;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.singer {
+    font-size: 14px;
+}
+/* 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.auth-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-buttons .login {
+    background-color: #5b3ea3;
+}
+
+.auth-buttons .signup {
+    background-color: #c93c83;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.player-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.player-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.song-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.artist-name {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    margin: 10px 0;
+}
+
+.current-time, .total-time {
+    margin: 0 10px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-bar{
+    height:58px;
+    width:578px;
+
+}
+
+.recents-favorites {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.recents-favorites button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5b3ea3;
+    color: white;
+}
+
+.new-releases {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.new-releases img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.new-releases span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.trending-songs {
+    width: 100%;
+}
+
+.trending-songs h3 {
+    text-align: center;
+}
+
+.trending-songs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending-songs li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.trending-songs li:hover {
+    background-color: #3e2769;
+} */
